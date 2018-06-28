@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Login/ Register</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static '/css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static '/css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+
+    <style media="screen">
+    .login {
+      width: 40%;
+      vertical-align: top;
+      margin: 20px 50px 100px 50px;
+    }
+
+    .items {
+      padding-bottom: 25px;
+    }
+
+    table  {
+      margin: 20px 40px;
+      width: 94.5%;
+    }
+
+    .total {
+      float: right;
+      width: 25%;
+    }
+
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <nav class="white" role="navigation">
+        <div class="nav-wrapper container">
+          <a id="logo-container" href="#" class="brand-logo">MM</a>
+          <ul class="right hide-on-med-and-down">
+            <li><a href="#">Product</a></li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Shopping Cart (0)</a></li>
+          </ul>
+
+          <ul id="nav-mobile" class="sidenav">
+            <li><a href="#">Navbar Link</a></li>
+          </ul>
+          <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+        </div>
+      </nav>
+    </header>
+
+    <form class="items" action="/" method="post">
+      <table class="striped responsive-table">
+        <thead>
+          <tr>
+            <th>Service</th>
+            <th>Price</th>
+            <th>Description</th>
+            <th>Total</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>Alvin</td>
+            <td>Eclair</td>
+            <td>$0.87</td>
+            <td>$0.87</td>
+          </tr>
+          <tr>
+            <td>Alan</td>
+            <td>Jellybean</td>
+            <td>$3.76</td>
+            <td>$3.76</td>
+          </tr>
+          <tr>
+            <td>Jonathan</td>
+            <td>Lollipop</td>
+            <td>$7.00</td>
+            <td>$7.00</td>
+          </tr>
+
+      </tbody>
+    </table>
+    <div class="total">
+      <p><b>Total: </b></p>
+      <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Continue Shopping</a>
+    </div>
+  </form>
+
+
+  <div class="row login">
+    <h5>Shipping Information</h5>
+    <form class="col s12">
+      <div class="row">
+        <div class="input-field col s6">
+          <input id="first_name" type="text" class="validate">
+          <label for="first_name">First Name</label>
+        </div>
+        <div class="input-field col s6">
+          <input id="last_name" type="text" class="validate">
+          <label for="last_name">Last Name</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="phone" type="text" class="validate">
+          <label for="phone">Phone Number (optional)</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="address" type="text" class="validate">
+          <label for="address">Address</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="address2" type="text" class="validate">
+          <label for="address2">Address 2</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="city" type="text" class="validate">
+          <label for="city">City</label>
+        </div>
+      </div>
+        <div class="row">
+        <div class="input-field col s12">
+          <input id="state" type="text" class="validate">
+          <label for="state">State</label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="input-field col s12">
+          <input id="zip" type="text" class="validate">
+          <label for="zip">Zipcode</label>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row login">
+      <h5>Billing Address</h5>
+      <p>
+        <label>
+          <input type="checkbox" class="filled-in" checked="unchecked" />
+          <span>Same as Shipping</span>
+        </label>
+      </p>
+        <div class="row">
+          <div class="input-field col s6">
+            <input id="first_name" type="text" class="validate">
+            <label for="first_name">First Name</label>
+          </div>
+          <div class="input-field col s6">
+            <input id="last_name" type="text" class="validate">
+            <label for="last_name">Last Name</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="phone" type="text" class="validate">
+            <label for="phone">Phone Number (optional)</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="address" type="text" class="validate">
+            <label for="address">Address</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="address2" type="text" class="validate">
+            <label for="address2">Address 2</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col s12">
+            <input id="city" type="text" class="validate">
+            <label for="city">City</label>
+          </div>
+        </div>
+          <div class="row">
+          <div class="input-field col s12">
+            <input id="state" type="text" class="validate">
+            <label for="state">State</label>
+          </div>
+        </div>
+          <div class="row">
+          <div class="input-field col s12">
+            <input id="zip" type="text" class="validate">
+            <label for="zip">Zipcode</label>
+          </div>
+        </div>
+        <a href="http://materializecss.com/getting-started.html" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Pay</a>
+      </form>
+    </div>
+
+
+
+
+
+
+    <footer class="page-footer teal">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h5 class="white-text">Company Bio</h5>
+            <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support and continue development on this project and is greatly appreciated.</p>
+
+
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Help</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Customer Service</a></li>
+              <li><a class="white-text" href="#!">Legal & Privacy</a></li>
+              <li><a class="white-text" href="#!">Contact</a></li>
+              <li><a class="white-text" href="#!">Career at MM</a></li>
+            </ul>
+          </div>
+          <div class="col l3 s12">
+            <h5 class="white-text">Connect</h5>
+            <ul>
+              <li><a class="white-text" href="#!">Facebook</a></li>
+              <li><a class="white-text" href="#!">Twitter</a></li>
+              <li><a class="white-text" href="#!">Instagram</a></li>
+              <li><a class="white-text" href="#!">Youtube</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style="font-size: 12px">MM business concept is to offer fashion and quality at the best price. MM has since it was founded in 2018 grown into one of the world's leading mortgage companies. The content of this site is copyright-protected and is the property of MM.</p>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="static/js/materialize.js"></script>
+    <script src="static/js/init.js"></script>
+
+  </body>
+</html>
