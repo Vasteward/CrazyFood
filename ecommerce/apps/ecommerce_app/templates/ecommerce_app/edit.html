@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <style media="screen">
+      .justify-content-end {
+        float: right;
+      }
+
+      .custom-file{
+        width: 20%;
+        margin-bottom: 20px;
+      }
+
+      .form-check {
+        margin: 10px 0px;
+      }
+
+      .main {
+        padding: 0px 18px;
+      }
+
+      form {
+        margin: 35px;
+        width: 50%;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Orders<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Prodcuts<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logoff</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <form>
+          <div class="form-group">
+            <label for="inputEmail4">Name</label>
+            <input type="name" class="form-control" id="inputEmail4" placeholder="name">
+          </div>
+          <div class="form-group">
+            <label for="exampleFormControlTextarea1">Description</label>
+            <textarea name="description" class="form-control" rows="8" cols="80"></textarea>
+          </div>
+          <div class="form-group">
+            <label for="category">Categories</label>
+            <select class="custom-select my-1 mr-sm-2" id="inlineFormCustomSelectPref">
+              <option selected>Shirt</option>
+              <option value="1">Mug</option>
+              <option value="2">Belt</option>
+              <option value="3">Key Chain</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="category2">or add a new category</label>
+            <input type="text" class="form-control" id="category2">
+          </div>
+          <div class="form-group">
+            <p><label for="inputEmail4">Image</label></p>
+            <div class="custom-file">
+              <label class="custom-file-label" for="customFile">Choose File</label>
+              <input type="file" class="custom-file-input" id="customFile">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="glyphicon-class"></span></a>
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                  <p class="main">Main</p>
+              </label>
+            </div>
+              <div class="form-check">
+                <a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="glyphicon-class"></span></a>
+                <input class="form-check-input check" type="checkbox" id="gridCheck">
+                <label class="form-check-label" for="gridCheck">
+                  <p class="main">Main</p>
+                </label>
+            </div>
+              <div class="form-check">
+                <a href=""><span class="glyphicon glyphicon-trash" aria-hidden="true"></span> <span class="glyphicon-class"></span></a>
+                <input class="form-check-input check" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                <p class="main">Main</p>
+              </label>
+            </div>
+            <a href="#"><button class="btn btn-secondary">Cancel</button></a>
+            <a href="#"><button class="btn btn-success">Preview</button></a>
+            <input type="submit" class="btn btn-primary" value="Update">
+          </div>
+        </div>
+      </form>
+
+
+    <!--  Scripts-->
+
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>

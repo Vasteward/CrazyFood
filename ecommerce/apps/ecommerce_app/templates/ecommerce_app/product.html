@@ -52,7 +52,7 @@
               <a class="nav-link" href="#">Orders<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item active">
-              <a class="nav-link" href="#">Prodcuts<span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="">Products<span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Logoff</a>
@@ -70,43 +70,30 @@
       <div class="show-all">
 
         <form class="form-inline my-2 my-lg-0" action="index.html" method="post">
-          <select id="inputState" class="form-control">
-            <option selected>Show All</option>
-            <option>Paid</option>
-            <option>Order in Process</option>
-            <option>Cancelled</option>
-            <option>Shipped</option>
-          </select>
+          <input class="btn btn-outline-primary my-2 my-sm-0" type="submit" value="Add new Specie">
         </form>
       </div>
 
       <table class="table products">
         <thead class="thead-dark">
           <tr>
-            <th scope="col">Order ID</th>
+            <th scope="col">Picture</th>
+            <th scope="col">ID</th>
             <th scope="col">Name</th>
-            <th scope="col">Date</th>
-            <th scope="col">Billing Address</th>
-            <th scope="col">Total</th>
-            <th scope="col">Status</th>
+            <th scope="col">Description</th>
+            <th scope="col">Impact</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
 
         <tbody>
           <tr>
-            <th scope="row"><a href="#">1</a></th>
-            <td>Mark Walhberg</td>
-            <td>123 Main Street, Wilbert, MA 00032</td>
-            <td>09/01/2018</td>
-            <td>$500</td>
-            <td>
-              <select id="inputState" class="form-control">
-                <option selected>Paid</option>
-                <option>Order in Process</option>
-                <option>Cancelled</option>
-                <option>Shipped</option>
-              </select>
-          </td>
+            <th scope="row"><a href="#"></a></th>
+            <td>1</td>
+            <td>Doggy</td>
+            <td>This is a nice doggy</td>
+            <td>Univerisally impacted</td>
+            <td><a href="#">Edit</a> <a href="#">Delete</a></td>
           </tr>
 
 

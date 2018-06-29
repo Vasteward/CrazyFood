@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load static %}
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <style media="screen">
+      .top {
+        padding-top: 20px;
+      }
+
+      .left, .right {
+        vertical-align: top;
+        margin: 50px;
+      }
+      .left {
+        width: 30%;
+        padding: 20px;
+      }
+      .right {
+        width: 50%;
+      }
+
+      .status {
+        width: 40%;
+        padding: 10px;
+      }
+
+      .left, .right, .summary, .status {
+        display: inline-block;
+
+      }
+
+      .left, .summary, .status {
+        border: 1px solid black;
+
+      }
+
+      .status, .summary {
+        margin-top: 30px;
+
+      }
+      .summary {
+        float: right;
+        padding: 15px 50px;
+      }
+
+    </style>
+  </head>
+
+  <body>
+    <div id="wrapper">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Dashboard</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+          <ul class="navbar-nav justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Orders<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="#">Products<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Logoff</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div class="left">
+        <p><b>Order ID:</b></p>
+
+        <p class="top"><b>Customer Shipping info</b></p>
+        <p><b>Name:</b></p>
+        <p><b>Address:</b></p>
+        <p><b>City:</b></p>
+        <p><b>State:</b></p>
+        <p><b>Zip:</b></p>
+
+        <p class="top"><b>Customer Billing info</b></p>
+        <p><b>Name:</b></p>
+        <p><b>Address:</b></p>
+        <p><b>City:</b></p>
+        <p><b>State:</b></p>
+        <p><b>Zip:</b></p>
+      </div>
+
+      <div class="right">
+        <table class="table">
+          <thead class="thead-dark">
+            <tr>
+              <th scope="col">ID</th>
+              <th scope="col">Item</th>
+              <th scope="col">Price</th>
+              <th scope="col">Quantity</th>
+              <th scope="col">Total</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>$$$$$</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>$$$$$</td>
+            </tr>
+            <tr>
+              <th scope="row">1</th>
+              <td>Mark</td>
+              <td>Otto</td>
+              <td>@mdo</td>
+              <td>$$$$$</td>
+            </tr>
+          </tbody>
+        </table>
+
+      <p style="background-color: green" class="status"><b>Status: SHIPPED</b></p>
+
+      <div class="summary">
+        <p><b>Sub total:</b> $$$$$</p>
+        <p><b>Shipping:</b> $$$$$</p>
+        <p><b>Total Price:</b> $$$$$</p>
+      </div>
+    </div>
+    </div> <!-- End of wrapper div -->
+
+
+    <!--  Scripts-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+  </body>
+</html>
